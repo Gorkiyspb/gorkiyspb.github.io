@@ -1,10 +1,10 @@
 /* Sass Document */
 @font-face {
   font-family: "Comfortaa";
-  src: url("../fonts/comfortaa/comfortaaRegular.ttf"); }
+  src: url("../fonts/comfortaa/comfortaaRegular.ttf");
+src: url("../fonts/comfortaa/ComfortaaRegular.eot");}
 @font-face {
   font-family: "Comfortaa";
-  src: url("../fonts/comfortaa/ComfortaaRegular.eot");
   src: url("../fonts/comfortaa/ComfortaaRegular.woff2") format("woff2");
   src: url("../fonts/comfortaa/ComfortaaRegular.woff") format("woff");
   src: url("../fonts/comfortaa/ComfortaaRegular.svg#Comfortaa-Regular") format("svg");
