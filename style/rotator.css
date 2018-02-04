@@ -1,0 +1,86 @@
+/* Sass Document */
+#count, #left_b, #right_b, .stripe, .img {
+  position: absolute; }
+
+#count {
+  width: 170px;
+  left: 495px;
+  /*ft: 450px */
+  bottom: 5px;
+  z-index: 10; }
+
+#left_b {
+  width: 100px;
+  height: 320px;
+  margin: 0px 0;
+  padding: 0;
+  left: 0;
+  /*height: 100px */
+  /*border: 1px solid blue */ }
+
+#right_b {
+  width: 100px;
+  height: 320px;
+  margin: 0px 0;
+  padding: 0;
+  right: 0px;
+  /*border: 1px solid blue */ }
+
+#left_b a, #right_b a {
+  position: relative;
+  display: block;
+  margin: 0px 0;
+  padding: 140px 0;
+  width: 70px;
+  /*height: 320px */
+  /*border: 1px solid yellow */
+  text-align: center;
+  z-index: 11; }
+
+#strelka_l, #strelka_r {
+  z-index: 11;
+  background: url("../images/sprite.png") 0 -200px no-repeat;
+  position: relative;
+  width: 30px;
+  height: 75px;
+  left: 7px;
+  top: 0px;
+  margin: -28px 0;
+  padding: 10px 0; }
+
+#strelka_r {
+  background: url("../images/sprite.png") 0 -290px no-repeat;
+  position: relative;
+  width: 30px;
+  height: 75px;
+  left: 62px;
+  margin: -28px 0;
+  padding: 10px 0;
+  top: -10px; }
+
+.stripe {
+  width: 116px;
+  height: 320px;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 1; }
+
+.img {
+  display: block;
+  width: 1160px;
+  height: 320px;
+  z-index: 0; }
+
+.point {
+  position: relative;
+  float: left;
+  margin: 0 4px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background: #799f4b;
+  color: #799f4b;
+  cursor: pointer;
+  text-indent: -9999px; }
+
+.active {
+  background: #60432c; }
