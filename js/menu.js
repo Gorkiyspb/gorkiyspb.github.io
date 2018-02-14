@@ -13,21 +13,14 @@ var d='галерея';
 	$('nav ul').append('<li><a href="#">'+c+'</a></li>');
 	$('nav ul').append('<li><a href="#">'+d+'</a></li>');
 	$('nav ul li').append('<ul></ul>');
-	var i=$('nav ul li ul');	
+	/*var i=$('nav ul li ul');	
 var e=0;
-	$('nav ul li a').click(function(){$(i).eq(e).animate({'margin-top':100+'px'});});
+	$('nav ul li a').click(function(){$(i).eq(e).animate({'margin-top':100+'px'});});*/
 								 
 	
 	
-	/*function focus(){if(i<4){
-		
-		$('a').eq(i).focusin(function(){$(this).addClass('.focus_a');});
-		$('nav ul li').eq(i).append('<ul></ul>');}}					
+			
 	
-	focus();*/
-		
-	
-//
-//$('nav ul li ul').append('<li></li>');
+
 
 });
