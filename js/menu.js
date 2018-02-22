@@ -1,38 +1,21 @@
 // JavaScript Document
-$(document).ready(function menu(){
+$(document).ready(function createMenu(){
 'use strict';
-var a='о нас';
-var b='полезности';
-var c='путешествия';	
-var d='галерея';
-	
-	$('nav').append('<ul></ul>');
+$('nav').append('<ul></ul>');
+var t=['о нас','полезности','путешествия','галерея'];
+for(var i=0;i<t.length;i++){$('nav ul').append('<li><a href="#">'+t[i]+'</a></li>');}
 
-	$('nav ul').append('<li><a href="#">'+a+'</a></li>');
-	$('nav ul').append('<li><a href="#">'+b+'</a></li>');
-	$('nav ul').append('<li><a href="#">'+c+'</a></li>');
-	$('nav ul').append('<li><a href="#">'+d+'</a></li>');
-		
+function createSecondmenu(){var smenu=('nav ul li a');
+							
+$(smenu).on('click',function(){var ind=$(this).index(smenu);
+if($(smenu).hasClass('a')){$(smenu).removeClass('a');
+$('nav ul li ul').animate({bottom:110+'px'},350);
+$(this).addClass('a');$('nav ul li ul').eq(ind).animate({bottom:-100+'%'},350);}
+else{$(this).addClass('a');$(smenu).after('<ul></ul>');
+$('nav ul li ul').eq(ind).animate({bottom:-100+'%'},350);
+$('nav ul li ul:first').css({display:'none'});}
+});}
+createSecondmenu();	
 	
-var menu=('nav ul li a');
-	
-
-
-$(menu).click(function(){$(this).addClass('a');$(this).after('<ul></ul>');
-	$('nav ul li ul').animate({marginTop:-42+'px'},1000);});
-	
-
-	
-	
-	/*function focus(){if(i<4){
-		
-		$('a').eq(i).focusin(function(){$(this).addClass('.focus_a');});
-		$('nav ul li').eq(i).append('<ul></ul>');}}					
-	
-	focus();*/
-		
-	
-//
-//$('nav ul li ul').append('<li></li>');
 
 });
