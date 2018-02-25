@@ -5,11 +5,9 @@ nav ul li ul {
   margin: -50px 0;
   padding: 60px 0;
   width: 100%;
-  background: #799f4b;
   z-index: -1;
-  bottom: 150px;
-  opacity: 1;
-  box-shadow: -5px 50px 5px black; }
+  bottom: 160px;
+  opacity: 1; }
 
 nav ul li ul li {
   position: relative;
