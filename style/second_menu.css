@@ -8,7 +8,8 @@ nav ul li ul {
   padding: 0;
   position: absolute;
   z-index: -1;
-  bottom: 110px; }
+  bottom: 110px;
+border-radius: 0 0 25px 25px;}
 
 nav ul li ul li {
   position: relative;
