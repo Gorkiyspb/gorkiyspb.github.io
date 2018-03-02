@@ -23,8 +23,9 @@ var botton=('#rotator');
 function pointer(){for(var i=0;i<img.length;i++){$('#count').append('<span class="point">'+i+'</span>');}}
 pointer();				
 $('#left_b').append('<a href="#"><div id="strelka_l"></div></a>').click(function(){animeslide("prew");});
-$('#right_b').append('<a href="#"><div id="strelka_r"></div></a>').click(function(){animeslide("next");});
-$('.point').eq(0).addClass('active');	
+$('#right_b').append('<a href="#"><div id="strelka_r"></div></a>').click(function(){animeslide("next");});	
+//$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
+$('.point').eq(0).addClass('active');
 $('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
 var animeslide=function anime(arrow){
 		if(arrow==="next"){rotator_next();if(t===img.length-1)
