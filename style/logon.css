@@ -1,0 +1,99 @@
+/* Sass Document */
+#forma_logon, #access {
+  display: block; }
+
+#access, .input, #user_name, #text_email {
+  position: relative; }
+
+.button, .input, #user_name, #text_email, #send {
+  font: 1.2em Poiretone, sans-serif;
+  font-weight: 900; }
+
+.button, .input {
+  border-radius: 15px;
+  background: #fffafa;
+  border: none; }
+
+#forma_logon {
+  position: absolute;
+  width: 350px;
+  height: 205px;
+  right: -370px;
+  margin: -210px 0;
+  padding: 0;
+  background: #799f4b;
+  z-index: 3;
+  box-shadow: 1px 2px 10px 2px black;
+  border-radius: 25px 0 0 25px; }
+
+#access {
+  margin: 15px 70px 0px 20px;
+  padding: 0; }
+
+#email {
+  position: relative;
+  border: 1px solid red;
+  margin: 15px 60px 0px 20px;
+  padding: 0; }
+
+.button {
+  display: block;
+  box-shadow: -1px 1px 1px 1px black;
+  margin: 10px auto;
+  padding: 2px 10px;
+  color: white;
+  background: #5c7939; }
+
+.input {
+  height: 40px;
+  width: 240px;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-radius: 15px;
+  box-shadow: -1px 1px 1px 1px black inset;
+  color: snow2; }
+
+#forma_email {
+  position: absolute;
+  width: 400px;
+  right: -410px;
+  margin: -105px 0;
+  padding: 0;
+  background: #799f4b;
+  z-index: 3;
+  box-shadow: 1px 2px 10px 2px black;
+  border-radius: 25px 0 0 25px; }
+
+#user_name {
+  position: relative;
+  color: snow2;
+  height: 40px;
+  padding: 0 10px;
+  margin: 5px 0;
+  width: 300px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: -1px 1px 1px 1px black inset; }
+
+#text_email {
+  display: block;
+  position: relative;
+  margin: 5px 0;
+  width: 300px;
+  height: 250px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: -1px 1px 1px 1px black inset;
+  border: none; }
+
+#send {
+  position: relative;
+  display: block;
+  margin: 15px auto;
+  padding: 0px 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: -1px 1px 1px 1px black;
+  color: white;
+  background: #5c7939; }

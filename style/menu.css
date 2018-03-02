@@ -5,29 +5,29 @@ menu {
   height: 212px;
   top: 15px; }
 
-menu ul, menu {
+menu, menu ul {
   position: relative;
   margin: 0;
   padding: 0; }
 
-menu ul .li_right {
+menu ul li {
+  display: block;
   position: relative;
   list-style: none;
   border-radius: 10px 0 0 10px;
-  background: #799f4b; }
+  background: #799f4b;
+  z-index: 4; }
 
-menu ul .li_right a {
+menu ul li a {
   display: block;
   margin: 5px 0;
-  /*padding: 0 21px 82px */
   padding: 0;
   border-radius: 10px 0 0 10px;
-  border: none;
   box-shadow: -5px 5px 7px black;
   background: #799f4b; }
 
-menu ul .li_right a:focus {
-  box-shadow: none;
+.focus {
+  box-shadow: -2px 2px 5px black;
   background: #5c7939; }
 
 #key, #mail {
@@ -36,8 +36,7 @@ menu ul .li_right a:focus {
   width: 50px;
   height: 100px;
   top: -1px;
-  /*margin: -1px 25px 0 0 */
-  /*padding: 0 */ }
+  z-index: 4; }
 
 #mail {
   background: url("../images/sprite.png") 0 -100px no-repeat;

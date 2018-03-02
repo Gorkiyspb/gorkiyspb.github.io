@@ -27,21 +27,20 @@ nav ul li {
   font: 2em Comfortaa, sans-serif;
   border-radius: 0 0 25px 25px;
   z-index: 1;
-  top: 5px;
-	}
+  top: 5px; }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   margin-top: 0px;
   padding: 15px 40px;
- /* position: relative;*/
-  box-shadow: -7px 7px 10px black;
+  position: relative;
+  box-shadow: -5px 5px 7px black;
   border-radius: 0 0 25px 25px;
-  background: #799f4b;}
-/*nav ul li a:focus*/
- .a {
-  box-shadow: -5px 1px 5px black;
+  background: #799f4b; }
+
+nav ul li a:focus,.a {
+  box-shadow: none;
   background: #5c7939; }
 
 #line {
