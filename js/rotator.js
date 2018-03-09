@@ -26,13 +26,22 @@ $('#left_b').append('<a href="#"><div id="strelka_l"></div></a>').click(function
 $('#right_b').append('<a href="#"><div id="strelka_r"></div></a>').click(function(){animeslide("next");});	
 //$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
 $('.point').eq(0).addClass('active');
-$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
+//for(var b=0;b<img.length-1;++b){$('#rotator').append('<img class="img"  alt=" " src="'+img[b]+'">');}
+//$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
+$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');	
 var animeslide=function anime(arrow){
 		if(arrow==="next"){rotator_next();if(t===img.length-1)
-						  {t=0;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
-						  else{t++;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
-		else if(arrow==="prew"){rotator_prew();if(t===0){t=img.length-1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
-						  else{t-=1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
+						 {$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
+						  t=0;
+						  $('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
+						  else{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">')
+						  ;t++;
+						$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
+		else if(arrow==="prew"){rotator_prew();if(t===0)
+						{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
+						t=img.length-1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
+						  else{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
+						t-=1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
 		else{t=arrow;}		
 $(".point.active").removeClass("active");
 $('.point').eq(t).addClass('active');};
