@@ -171,6 +171,14 @@ table {
   cursor: pointer;
   opacity: 0; }
 
+#up > a > div {
+  display: block;
+  width: 40px;
+  height: 80px;
+  background: url("../images/sprite.png") -80px -40px no-repeat;
+  margin: 0 auto;
+  padding: 0; }
+
 #up:hover {
   background: #5c7939;
   border: 5px solid #799f4b;
