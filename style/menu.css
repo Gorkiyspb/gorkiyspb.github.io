@@ -16,7 +16,7 @@ menu ul li {
   list-style: none;
   border-radius: 10px 0 0 10px;
   background: #799f4b;
-  z-index: 4; }
+  z-index: 6; }
 
 menu ul li a {
   display: block;
@@ -24,7 +24,8 @@ menu ul li a {
   padding: 0;
   border-radius: 10px 0 0 10px;
   box-shadow: -5px 5px 7px black;
-  background: #799f4b; }
+  background: #799f4b;
+  z-index: 2; }
 
 .focus {
   box-shadow: -2px 2px 5px black;
