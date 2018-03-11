@@ -31,17 +31,16 @@ $('.point').eq(0).addClass('active');
 $('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');	
 var animeslide=function anime(arrow){
 		if(arrow==="next"){rotator_next();if(t===img.length-1)
-						 {$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
-						  t=0;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
-						  else{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
-						  t++;$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
+						 {
+						  t=0;$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
+						  $('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
+						  else{t++;$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
 						$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
 		else if(arrow==="prew"){rotator_prew();if(t===0)
-						{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
-						t=img.length-1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
-						  else{$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');
-						t-=1;$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
-						}}
+						{
+						t=img.length-1;$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}
+						  else{
+						t-=1;$('#count').after('<img class="img"  alt=" " src="'+img[t]+'">');$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');}}
 		else{t=arrow;}		
 $(".point.active").removeClass("active");
 $('.point').eq(t).addClass('active');};
