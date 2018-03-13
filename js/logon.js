@@ -5,15 +5,13 @@ $('menu').append('<ul></ul>');
 $('menu ul').append('<li><a href="#" name="key"><div id="key"></div></a></li><li><a href="#" name="mail"><div id="mail"></div></a></li>');
 $('menu ul').after('<div id="forma_logon"></div>');
 $('menu ul').after('<div id="forma_email"></div>');
-/*$('[name="key"]').after('<div id="forma_logon"></div>');
-$('[name="mail"]').after('<div id="forma_email"></div>');*/
 $('#forma_logon').append('<form id="access"></form>');
-$('#forma_logon form').append('<input class="input" placeholder="Ваш e-mail"><input class="input" type="password" placeholder="Ваш пароль"><button class="button" type="submit" name="send">зарегистрироваться</button><button class="button" type="submit" name="register">отправить</button>');
+$('#forma_logon form').append('<input class="input" placeholder="Ваш e-mail"><input class="input" type="password" placeholder="Ваш пароль"><button class="button" type="submit" name="send">зарегистрироваться</button><button class="button" type="submit" name="register" >отправить</button>');
 var a=$('menu ul li a');
 	
-$('#forma_email').append('<form id="email"></form>');
+$('#forma_email').append('<form id="email" name="email"></form>');
 	
-$('#email').append('<input class="email_user" placeholder="Ваше имя" ><input class="email_user" placeholder="Ваш e-mail"></><textarea placeholder="Ваше сообщение" id="text_email"></textarea><button id="send">отправить</button>');
+$('#email').append('<input class="email_user" placeholder="Ваше имя" ><input class="email_user" placeholder="Ваш e-mail"><textarea placeholder="Ваше сообщение" id="text_email"></textarea><div><p><input id="checkbox" type="checkbox" name="checkbox" value>Я согласен на обработку моих персональных данных.</p></div><button id="send" name="send2">отправить</button>');
 	
 function chooseButton(){a.on('click',function()
 {if(a.hasClass('focus'))
@@ -35,11 +33,11 @@ $('.button').mouseenter(function(){if($('.button').hasClass('button_active'))
 {$('.button').removeClass('button_active');$(this).addClass('button_active');}
 else{$(this).addClass('button_active');}});
 
-$('#send').mouseover(function(){if(document.getElementById('send').background !=='#799f4b')
-{$(this).css({background:'#799f4b',boxShadow: 'none',border: '1px solid #5c7939'});}});
-$('#send').mouseout(function(){if(document.getElementById('send').background !=='#5c7939')	
-{$(this).css({background: '#5c7939',boxShadow:'-1px 1px 1px 1px black',border:'none'});}});
-
+$('#checkbox').on('click',function(){if(($('#checkbox').prop('checked')))
+{$('[name="send2"]').css({border:'none',boxShadow:'-0.5px 0.5px 1px 0.5px black',background:'#5c7939'});
+$('[name="send2"]').css({border:'none',boxShadow:'-0.5px 0.5px 1px 0.5px black',background:'#5c7939'});}
+else{$('[name="send2"]').css({background:"",boxShadow:""});}});
+	
 $(document).on('click',function(e){if(!$('#key').is(e.target)&& $('#forma_logon').has(e.target).length===0)
 {$('#forma_logon').stop().animate({right:-370+'px'},1000,'easeOutCirc');$('[name="key"]').removeAttr('class');}});
 	
