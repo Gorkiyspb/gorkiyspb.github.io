@@ -67,7 +67,8 @@
   background: #799f4b;
   z-index: 3;
   box-shadow: 1px 2px 10px 2px black;
-  border-radius: 25px 0 0 25px; }
+  border-radius: 25px 0 0 25px;
+  color: white; }
 
 .email_user {
   display: block;
@@ -91,10 +92,25 @@
   border: none; }
 
 #send {
+  display: block;
   margin: 15px auto;
   padding: 0px 10px;
   border-radius: 15px;
+  border: 1px solid #5c7939;
+  box-shadow: -0.5px 0.5px 1px 0.5px black inset;
+  background: #799f4b;
   border: none;
-  box-shadow: -1px 1px 1px 1px black;
-  color: white;
-  background: #5c7939; }
+  color: white; }
+
+#email > div {
+  font: 1.2em Poiretone, sans-serif;
+  text-align: justify;
+  float: left;
+  display: block; }
+
+#checkbox {
+  margin: 0 -10px 0;
+  padding: 0;
+  width: 50px;
+  height: 20px;
+  vertical-align: text-top; }
