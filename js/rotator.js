@@ -61,7 +61,7 @@ $('.img').animate({opacity:1},2000);}};
 
 var slideTime; 
 var stop=false;	
-var start=function(){if(!stop){slideTime=setTimeout(function(){animeslide('next');},pause);}};
+var start=function(){if(!stop){slideTime=setTimeout(function(){animeslide('next');},pause);start();}};
 $('#rotator').hover(function(){clearTimeout(slideTime);stop=true;},function(){stop = false; start();});
 start();});
 
