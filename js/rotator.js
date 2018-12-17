@@ -19,7 +19,6 @@ var botton=('#rotator');
 	$(botton).append('<div id="left_b"></div>');
 	$(botton).append("<div id='right_b'></div>"); 
 	$(botton).append("<div id='count'></div>");
-	
 function pointer(){for(var i=0;i<img.length;i++){$('#count').append('<span class="point">'+i+'</span>');}}
 pointer();				
 $('#left_b').append('<a href="#"><div id="strelka_l"></div></a>').click(function(){animeslide("prew");});
