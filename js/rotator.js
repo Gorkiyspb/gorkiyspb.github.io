@@ -59,7 +59,7 @@ var slideTime;
 var stop=false;
 	
 function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');};}
-$('#rotator').hover(function(){clearTimeout(slideTime);stop=true;},function(){var stop=false;}); 
+$('#rotator').hover(function(){clearTimeout(slideTime);stop=true;},function(){function(){setTimeout(start();},pause);animeslide('next');}); 
 	
 start();});
 
