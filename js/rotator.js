@@ -60,6 +60,7 @@ var stop=false;
 	
 function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}
 $('#rotator').hover(function(){clearTimeout(slideTime);stop=true;},function(){stop=false;}); 
+		 
 start();});
 
 
