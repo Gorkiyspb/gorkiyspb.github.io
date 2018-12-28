@@ -3,7 +3,7 @@
 
 //-----------------------------------------------------------------
 $(document).ready(function controlRotator(){
-//'use strict';	
+'use strict';	
 $('#rotator').click(function(event){event.preventDefault();});	
 var t=0;
 var img=new Array([]);
