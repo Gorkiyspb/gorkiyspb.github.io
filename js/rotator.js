@@ -55,10 +55,11 @@ $('.img').attr('src',img[r]);animeslide(r);
 rotator_prew1();});
 var rotator_prew1=function(){stopAnimate();for(var f=0;f<10;f++){$('#rotator').append('<div class="stripe" style="width:100%" name="'+f+'" ><img class="img" alt="img"  src="'+img[t]+'"></div>');$('.img').css({opacity:0});							 
 $('.img').animate({opacity:1},2000);}};
+
+function start(){
 var slideTime; 
-var stop=false;
-function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}
-		 
+var stop=false;	
+if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}	 
 $('#rotator').hover(function(){clearTimeout(slideTime);},function(){stop=false;});};
 
 	start();});
