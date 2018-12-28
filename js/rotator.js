@@ -57,7 +57,7 @@ $('.img').animate({opacity:1},2000);}};
 var pause=3000;	
 var slideTime; 
 var stop=false;	
-function start(){if(!stop){slideTime=setTimeout(function(){animeslide('next')},pause);}} 
+function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}} 
 $('#rotator').hover(function(){clearTimeout(slideTime);stop=true;},function(){stop=false;start();});
 start();
 });
