@@ -14,7 +14,6 @@ var img=new Array([]);
 	img[4]='images/crumb.png';
 	img[5]='images/baby.png';
 var speed=300;
-var pause=3000;	
 var botton=('#rotator');
 	$(botton).append('<div id="left_b"></div>');
 	$(botton).append("<div id='right_b'></div>"); 
@@ -55,7 +54,7 @@ $('.img').attr('src',img[r]);animeslide(r);
 rotator_prew1();});
 var rotator_prew1=function(){stopAnimate();for(var f=0;f<10;f++){$('#rotator').append('<div class="stripe" style="width:100%" name="'+f+'" ><img class="img" alt="img"  src="'+img[t]+'"></div>');$('.img').css({opacity:0});							 
 $('.img').animate({opacity:1},2000);}};
-
+var pause=3000;	
 var slideTime; 
 var stop=false;	
 function start(){if(!stop){slideTime=setTimeout(function(){animeslide('next')},pause);}} 
