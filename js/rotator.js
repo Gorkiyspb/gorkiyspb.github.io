@@ -59,9 +59,9 @@ var slideTime;
 var stop=false;
 function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');};
 		 
-$('#rotator').hover(function(){clearTimeout(slideTime);},function(){var stop=false;});}
+$('#rotator').hover(function(){clearTimeout(slideTime);},function(){stop=false;});};
 
-	start(stop);});
+	start();});
 
 
 
