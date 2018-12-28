@@ -27,7 +27,7 @@ $('#right_b').append('<a href="#"><div id="strelka_r"></div></a>').click(functio
 $('.point').eq(0).addClass('active');
 //for(var b=0;b<img.length-1;++b){$('#rotator').append('<img class="img"  alt=" " src="'+img[b]+'">');}
 //$('#rotator').append('<img class="img"  alt=" " src="'+img[t]+'">');
-for(var a=0;a<img.length;a++){$('#count').after('<img class="img"  alt=" " src="'+img[a]+'">');}
+//for(var a=0;a<img.length;a++){$('#count').after('<img class="img"  alt=" " src="'+img[a]+'">');}
 var animeslide=function anime(arrow){
 		if(arrow==="next"){rotator_next();if(t===img.length-1)
 						 {
