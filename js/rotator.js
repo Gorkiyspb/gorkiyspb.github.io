@@ -58,8 +58,8 @@ $('.img').animate({opacity:1},2000);}};
 
 var slideTime; 
 var stop=false;	
-function start(){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}	 
-$('#rotator').hover(function(){clearTimeout(slideTime);},function(stop){stop=false;});};
+function start(stop){if(!stop){slideTime=setTimeout(function(){start();},pause);animeslide('next');}	 
+$('#rotator').hover(function(){clearTimeout(slideTime);},function(){stop=false;});};
 
 	start();});
 
